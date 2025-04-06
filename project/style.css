@@ -41,7 +41,7 @@ z-index: 1000;}
   .new-collection {
     position: relative;
     width: 100%;
-    height: 1100px;
+    height: 850px;
     overflow: hidden;
     }
 
@@ -52,7 +52,7 @@ z-index: 1000;}
   
   .image-container img {
     width: 100%;
-    height: 1100px;
+    height: 700px;
     display: block;
     object-fit: cover; }
 
@@ -62,7 +62,7 @@ z-index: 1000;}
         top: 0;
         left: 0;
         width: 100%;
-        height: 1007.93px;
+        height: 700px;
         z-index: 1; /* ниже текста */
       }
       
@@ -251,14 +251,23 @@ z-index: 1000;}
             font-family: 'Poppins', sans-serif;
           }
           .catalog-menu1
-          {width: 1512px;
-          height: 1100px;
+          {width: auto;
+          height: 500pxx;
           background-color:white;
-          }
-          .card1{
+          display: flex;
+          /* если нужно, можно добавить: */
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 10px;
+        }
+        .card-text{
           display: flex;
           justify-content: space-around;
+          
         }
+        
 
           
           
