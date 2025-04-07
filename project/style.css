@@ -1,3 +1,9 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header-line {
     display: flex;
     justify-content: space-between; 
@@ -23,8 +29,7 @@ z-index: 1000;}
     font-weight: 600;
     font-family:"Poppins", sans-serif;
     display: flex;
-    
-    
+  
   }
   
   .icong-container {
@@ -56,14 +61,13 @@ z-index: 1000;}
     display: block;
     object-fit: cover; }
 
-      /* Картинка становится задним фоном через абсолютное позиционирование */
       .image-container {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 700px;
-        z-index: 1; /* ниже текста */
+        z-index: 1; 
       }
       
       .image-container img {
@@ -73,54 +77,69 @@ z-index: 1000;}
         display: block;
       }
       
-      /* Контент поверх картинки */
-      .new-collection-content {
-        position: relative; /* важное свойство: поверх фонового изображения */
-        z-index: 3;
-        max-width: 500px;
-        background-color: rgba(255, 239, 216, 0.95); /* бежевый с прозрачностью */
-        padding: 40px;
-        border-radius: 10px;
-        margin: 100px auto;
-        font-family: 'Poppins', sans-serif;
-        box-shadow: 0 4px 20px rgba(1, 1, 1, 0.1);
-      }
-      
-      /* Остальные стили — те же */
-      .small-text p {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-        color: #333;
-        font-family:"Poppins",sans-serif;
-        font-weight: bold;
-      }
-      
-      .new-collection-content h1 {
-        font-size: 52px;
-        color: #b68a32;
-        margin: 10px 0 20px;
-        line-height: 1.5;
-        font-weight: 700;
-      }
-      
-      .new-collection-contentbtn {
-        background-color: #b68a32;
-        color: white;
-        border: none;
-        padding: 24px 74px;
-        font-weight: bold;
-        font-size: 20px;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-      
-      .new-collection-contentbtn:hover {
-        background-color: #997528;
-      }
-      
+       
+.new-collection-content {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  width: auto;
+  background-color: rgba(255, 239, 216, 0.95); 
+  padding: 40px;
+  border-radius: 10px;
+  margin: 100px auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 20px rgba(1, 1, 1, 0.1);
+  left: 350px;
+  top: 120px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+.small-text {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.new-collection-content h1 {
+  font-size: 52px;
+  color: #b68a32;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.new-collection-content p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px; }
+
+
+.new-collection-contentbtn {
+  background-color: #b68a32;
+  color: white;
+  border: none;
+  padding: 24px 74px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: flex-start; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  outline: none; 
+}
+
+.new-collection-contentbtn:hover {
+  background-color: #997528;
+}
+
+        
       .text-menu-list1{
         margin-top: 10px;
       }
@@ -252,10 +271,9 @@ z-index: 1000;}
           }
           .catalog-menu1
           {width: auto;
-          height: 500pxx;
+          height: 500px;
           background-color:white;
           display: flex;
-          /* если нужно, можно добавить: */
           align-items: center;
           flex-wrap: wrap;
           justify-content: center;
@@ -267,8 +285,78 @@ z-index: 1000;}
           justify-content: space-around;
           
         }
-        
-
+        .text-products {
+          display: flex;
+          justify-content: center;
+          padding: 75px ;
+        }
+          .products-cards{
+            height: 1240px;
+            width: auto;
+            background-color: #333;
+          }        
+          .products-cards {
+              display: grid;
+              grid-template-columns: repeat(4, 550px); /* 4 столбца */
+              grid-template-rows: repeat(2, 450px); /* 2 строки */
+              gap: 20px;
+              background-color: #222;
+              border-radius: 10px;
+              margin-top: 100px;
+              padding: 20px;
+    
+          }
+          
+          .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            height: 1000px;
+            width: 750px;
+            padding: 10px;
+            gap: 40px;
+            
+              }
+          
+          .product-card:hover {
+            transform: translateY(-5px);
+          }
+          
+          .product-card img {
+            width: 100%;
+            display: block;
+          }
+          
+          .product-title {
+            font-size: 18px;
+            margin: 10px;
+            color: #333;
+          }
+          
+          .product-desc {
+            font-size: 14px;
+            margin: 0 10px 10px;
+            color: #777;
+          }
+          
+          .product-price {
+            margin: 0 10px 10px;
+          }
+          
+          .new-price {
+            font-weight: bold;
+            color: #b68a32;
+            margin-right: 10px;
+          }
+          
+          .old-price {
+            color: #aaa;
+            text-decoration: line-through;
+            font-size: 14px;
+          }
+          
           
           
           
