@@ -669,6 +669,8 @@ position: relative;
     width: 258px;
     height: 196px;
     position: relative;
+    left: 1369px;
+    bottom: 2187px;
   }
 
   .ph11{
@@ -679,7 +681,8 @@ position: relative;
     width: 258px;
     height: 196px;
     position: relative;
-  }
+    left: 1480px;
+   bottom: 2597px; } 
   .ph12
 {
     background-image: url(images/pcard3.png);
@@ -689,8 +692,8 @@ position: relative;
     width: 258px;
     height: 196px;
     position: relative;
-    bottom: 2500px;
-    left: 1500px;
+    bottom: 25790px;
+    left: 1360px;
   }
   body {
     overflow-x: hidden;
