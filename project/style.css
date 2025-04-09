@@ -698,3 +698,9 @@ position: relative;
   body {
     overflow-x: hidden;
   }
+  .fph1 {
+    box-sizing: border-box;
+    position: relative;
+    left: 5px;
+  }
+  
