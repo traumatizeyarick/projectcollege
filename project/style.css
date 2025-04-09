@@ -396,7 +396,7 @@ z-index: 1000;}
     align-items: flex-start;
     gap: 15px;
     padding-top: 250px;
-    padding-left: 35px;
+    padding-left: 75px;
     left: 400px;
     width: 600px;
 }
@@ -406,8 +406,8 @@ z-index: 1000;}
   height: 600px;
   position: relative;
   overflow: hidden;
-  left: 1000px;
-  bottom: 800px;
+  left: 760px;
+  bottom: 755px;
 }
 
 .slider-img {
@@ -458,7 +458,7 @@ z-index: 1000;}
   z-index: 3;
  }
  .nextbtnimg {
-  position: absolute; /* Абсолютное позиционирование */
+  position: absolute; 
   top: calc(20px + 60px); 
   left: 468px;
   margin-top: 400px;
@@ -498,15 +498,137 @@ z-index: 1000;}
   color: white;
 }
 
-.otherimg {
-  display: flex;
-  justify-content: flex-end; /* Помещает изображение справа */
-width: 500px;
-}
 
-.otherimg img {
-  width: 600px; 
-  height: 600px;
-display: flex;
-justify-self: end;
+
+.content {
+width: auto;
+  height: auto;
+  position: relative;
+  bottom: 165px;
+  left: 1425px;
+  padding-bottom: 10px;
+
 }
+.imgindicator{
+  width: 120px;
+  height: 27px;
+  position: absolute;
+  gap: 40px;
+}
+  .otherimg{
+    width: 372px;
+    height: 486px;
+    background-image: url(images/pcard6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .funiro-furniture {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;  
+  }
+  
+  .funiro-furniture-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding-top: 40px;      
+  }
+  
+  .fftp {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .hfuniro-furniture {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    margin: 10px 0 0 0;
+  }
+  
+  .p{
+    font-weight: bold;
+  }
+  .ph1{ background-image: url(images/funiroph1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  width: 178px;
+  height: 242px;}
+    
+    .ph2{ background-image: url(images/funiroph2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 52px;
+      height: 486px;
+    }
+
+      
+    .ph3{
+      background-image: url(images/funiroph3.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 78px;
+      height: 382px;
+    }
+      
+    .ph4{
+      background-image: url(images/funiroph4.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 185px;
+      height: 323px;
+    }
+    .ph5{
+      background-image: url(images/funiroph5.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 343.99px;
+      height: 242px;
+    }
+  .ph6{
+    background-image: url(images/funiroph6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 295px;
+    height: 392px;
+    position: relative;
+  }
+  .ph7{
+      background-image: url(images/funiroph7.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    width: 290px;
+    height: 348px;
+    }
+
+  .ph8{
+      background-image: url(images/funiroph8.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 258px ;
+      height: 196px;
+  }
+  .ph9{
+    background-image: url(images/funiroph8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 258px;
+    height: 196px;
+  }
