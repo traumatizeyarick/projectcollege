@@ -1,21 +1,33 @@
+  body,html
+{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
 * {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+
 .header-line {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+
  }
 .header{ 
 width: auto;    
 background-color: white;
 position: sticky;
 top: 0;
-z-index: 1000;}
+z-index: 1000;
+max-width: 100%;
+}
   .nav {
     display: flex;
     gap: 75px;
@@ -36,6 +48,8 @@ z-index: 1000;}
     display: flex;
     gap: 25px;
     align-items: center;
+    width: auto;
+    max-width: 100%;
   }
   
   .icong-container img {
@@ -359,9 +373,9 @@ z-index: 1000;}
 
       .beatiful-rooms{
         width: auto;
-        height: 1000px;
+        height: auto;
         background-color: #fcf8f3;
-        left: 400px;
+      
       }
 
       .explore-morebtn {
@@ -395,27 +409,21 @@ z-index: 1000;}
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    padding-top: 250px;
-    padding-left: 75px;
-    left: 400px;
+    padding-top: 120px;
+    padding-left: 25px;
+    left: 10px;
     width: 600px;
 }
 
 .slider {
   width: 600px;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  left: 760px;
-  bottom: 755px;
+  height: 700px;
 }
 
 .slider-img {
   width: 600px;
   height: 700px;
   position: absolute;
-  top: 0;
-  left: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -425,13 +433,13 @@ z-index: 1000;}
 }
 
 .controls {
-  position: absolute;
-  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  z-index: 2;
+  position: relative; 
+bottom: 30%;
+
 }
 
 .controlls {
@@ -441,9 +449,7 @@ z-index: 1000;}
 }
 
 .text-box {
-  position: absolute;
-  top: 400px; 
-  left: 250px; 
+ position:relative;
   width: 217px; 
   height: 130px; 
   background-color: rgba(254, 254, 254, 0.5); 
@@ -455,13 +461,13 @@ z-index: 1000;}
   font-size: 14px;
   padding: 23px; 
   box-sizing: border-box;
-  z-index: 3;
+ left: 55%;
+margin-top: 400px;
  }
  .nextbtnimg {
   position: absolute; 
-  top: calc(20px + 60px); 
-  left: 468px;
-  margin-top: 400px;
+  left: 100%;
+  bottom:-5%;
 }
 
 .nextbtnimg img {
@@ -497,24 +503,24 @@ z-index: 1000;}
   background-color: #b68a32;
   color: white;
 }
-
-
-
-.content {
-width: auto;
+.broomscontainer{
   height: auto;
-  position: relative;
-  bottom: 165px;
-  left: 1425px;
-  padding-bottom: 10px;
-
+  display:flex; 
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 150px;
+  padding-bottom: 5%;
+  
 }
 .imgindicator{
   width: 120px;
-  height: 27px;
-  position: absolute;
   gap: 40px;
+  position: relative;
+  left: 60%;
+  top: 100%;
+
 }
+
   .otherimg{
     width: 372px;
     height: 486px;
@@ -526,7 +532,7 @@ width: auto;
   }
   .funiro-furniture {
     width: 100%;
-    height: 100px;
+    height: autopx;
     background-color: white;
     display: flex;
     justify-content: center;  
@@ -537,7 +543,11 @@ width: auto;
     display: flex;
     flex-direction: column; 
     align-items: center;    
-    padding-top: 40px;      
+    justify-content: center;
+    margin: 30px 0 20px;
+    position: relative;
+    bottom: 42.5%;  
+    padding: 10px;
   }
   
   .fftp {
@@ -557,150 +567,18 @@ width: auto;
   .p{
     font-weight: bold;
   }
-  .ph1{ background-image: url(images/funiroph1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  width: 178px;
-  height: 242px;
-left: 891px;
-top: 619px;
-position: relative;
-}
-    
-    .ph2{ background-image: url(images/funiroph2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 52px;
-      height: 486px;
-      position: relative; 
-      bottom: 126px;
-    }
-
-      
-    .ph3{
-      background-image: url;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 451px;
-      height: 382px;
-      position: relative;
-      bottom: 438px;
-      left: 70px;
-    }
-      
-    .ph4{
-      background-image: url(images/funiroph4.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 185px;
-      height: 323px;
-      position: relative;
-      bottom: 490px;
-      left: 5px;
-    }
-    .ph5{
-      background-image: url(images/funiroph5.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 343.99px;
-      height: 242px;
-      position: relative; 
-      bottom: 813px;
-      left: 210px;
-    }
-  .ph6{
-    background-image: url(images/funiroph6.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 295px;
-    height: 392px;
-    position: relative;
-    bottom: 1325px;
-    left: 575px;
-
-  }
-  .ph7{
-      background-image: url(images/funiroph7.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    width: 290px;
-    height: 348px;
-    position: relative;
-    bottom: 1815px;
-    left: 890px;
-    }
-
-  .ph8{
-      background-image: url(images/funiroph8.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 258px ;
-      height: 196px;
-      position: relative;
-      bottom: 1795px;
-      left: 1090px;
-  }
-  .ph9{
-    background-image: url(images/funiroph8.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 258px;
-    height: 196px;
-    position: relative;
-    bottom: 2444px;
-    left: 1197px;
- 
-  }
- 
-  .ph10{
-    background-image: url(images/pcard1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 258px;
-    height: 196px;
-    position: relative;
-    left: 1369px;
-    bottom: 2187px;
-  }
-
-  .ph11{
-    background-image: url(images/pcard8.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 258px;
-    height: 196px;
-    position: relative;
-    left: 1480px;
-   bottom: 2597px; } 
-  .ph12
-{
-    background-image: url(images/pcard3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 258px;
-    height: 196px;
-    position: relative;
-    bottom: 25790px;
-    left: 1360px;
-  }
-  body {
-    overflow-x: hidden;
-  }
-  .fph1 {
-    box-sizing: border-box;
-    position: relative;
-    left: 5px;
-  }
   
+  .ph1 {
+    width: 1440px;
+    height: 712px;
+    background-image: url(images/test1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
