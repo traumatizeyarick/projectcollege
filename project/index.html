@@ -9,40 +9,43 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <div class="header">
-      <div class="container">
-        <div class="header-line"> 
-          <div class="header-logo">
-            <img src="images/logo.png" alt="">
-          </div>
+  <header class="header">
+    <div class="header-line">
   
-          <div class="nav">
-            <a href="@">Home</a>
-            <a href="@">Shop</a>
-            <a href="@">About</a>
-            <a href="@">Contact</a>
-          </div>
   
-          <div class="icong-container">
-            <div class="person-point">
-              <a href="@"><img src="images/person.png" alt=""></a>
-            </div>
-            <div class="search-point">
-              <a href="@"><img src="images/search.png" alt=""></a>
-            </div>
-            <div class="heart-point">
-              <a href="@"><img src="images/heart.png" alt=""></a>
-            </div>
-            <div class="basket-point">
-              <a href="@"><img src="images/basket.png" alt=""></a>
-            </div>
-          </div>
-          
-            </div>
-          </div>
+      <div class="header-logo">
+        <div class="logo-container" id="logoButton">
+          <img src="images/logo.png" alt="Logo">
         </div>
       </div>
+ 
+      <nav class="nav" id="navMenu">
+        <a href="@">Home</a>
+        <a href="@">Shop</a>
+        <a href="@">About</a>
+        <a href="@">Contact</a>
+      </nav>
+  
+   
+      <div class="icong-container">
+        <div class="person-point">
+          <a href="@"><img src="images/person.png" alt=""></a>
+        </div>
+        <div class="search-point">
+          <a href="@"><img src="images/search.png" alt=""></a>
+        </div>
+        <div class="heart-point">
+          <a href="@"><img src="images/heart.png" alt=""></a>
+        </div>
+        <div class="basket-point">
+          <a href="@"><img src="images/basket.png" alt=""></a>
+        </div>
+      </div>
+  
     </div>
+  </header>
+  
+  
 <div class="new-collection">
   <div class="new-collection1">
     <div class="image-container">
@@ -60,8 +63,9 @@
   </div>  
     </div>
     <div class="list-menu1">
-      <h1 class="text-list-menu1">Browse The Range</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <div class="text-list-menu">
+      <h1>Browse The Range</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
       <div class="catalog-menu1">
         <div class="card2">
           <img src="images/card1.png" alt="Dining">
@@ -197,8 +201,8 @@
           
     
           <div class="controls">
-            <img class="prev controlls" src="images/left.png" alt="Previous Slide" />
-            <img class="next controlls" src="images/right.png" alt="Next Slide" />
+            <img class="prev controlls" src="images/Group 13.png" alt="Previous Slide" />
+           
             </div>
            
       </div>
@@ -245,8 +249,18 @@
   
 </div>
 </div>
+<script>
+  const logoBtn = document.getElementById('logoButton');
+  const navMenu = document.getElementById('navMenu');
 
-<script src="script.js"></script>
+  logoBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script>
+
+<script src="script.js">
+  
+</script>
 </body>
 </html>
 </body>
