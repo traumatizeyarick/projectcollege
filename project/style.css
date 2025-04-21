@@ -420,8 +420,10 @@
 }
 
 .slider {
+  position: relative;
   width: 600px;
   height: 850px;
+  z-index: 1;
 }
 
 .slider-img {
@@ -442,6 +444,7 @@
   position: absolute; 
 align-items: start;
   cursor: pointer;
+
 }
 
 
@@ -460,7 +463,7 @@ align-items: start;
   padding: 23px; 
   box-sizing: border-box;
  left: 5%;
-margin-top: 630px;
+
  }
  .nextbtnimg {
   position: absolute; 
@@ -529,12 +532,12 @@ margin-top: 630px;
     border-radius: 10px;
   }
   .funiro-furniture {
-    width: 100%;
-    height: autopx;
+    width:fit-content;
+    height: auto;
     background-color: white;
     display: flex;
     justify-content: center;  
-    align-items: flex-start;  
+  width: 1440px;
   }
   
   .funiro-furniture-text {
@@ -565,8 +568,7 @@ margin-top: 630px;
  
   
   .ph1 {
-    width: 1440px;
-    height: 712px;
+
     background-image: url(images/test1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -576,9 +578,12 @@ margin-top: 630px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
- 
-
+.gallery{
+  display: flex;
+  justify-content: center;
+}
   .line {
     border: none;
     border-top: 1px solid grey;
@@ -769,6 +774,12 @@ color:#9F9F9F;;
       width: 550px;
       margin: 0 auto;
     }
+  
+    
+
+  .funiro-furniture{
+display: none;
+  }
   }
 
   .broomscontainer {
@@ -776,7 +787,7 @@ color:#9F9F9F;;
     padding: 20px;
     gap: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0fr 1fr;
   }
   .text-box {
     position: absolute;
@@ -792,7 +803,7 @@ color:#9F9F9F;;
     padding: 16px;
     box-sizing: border-box;
     font-size: 14px;
-    margin-top: 0; 
+   
   
   }
   .imgindicator{
@@ -808,13 +819,7 @@ color:#9F9F9F;;
   .controls{
     position: absolute;
     top: 55%;
-    left: 85%;
-  }
-
-  .aboutus {
-    grid-template-columns: 50%;
-    gap: 20px;
-    margin: 20px;
+    left: 80%;
   }
 
 
@@ -826,14 +831,10 @@ color:#9F9F9F;;
 
   .ph1 {
     background-size: cover;
-  width: auto;
-  height: 300px;
+  height: 500px;
+  width: 1440px;
   }
-  .funiro-furniture{
-    width: auto;
-    height: 500px;
-    display: none;
-  }
+
 
   .newsletter-form {
     flex-direction: column;
@@ -850,10 +851,73 @@ color:#9F9F9F;;
   cursor: default;
 }
 
-@media (max-width: 880px) {
+
+
+@media(max-width:1480px)
+{   
+  .funiro-furniture{
+    width: 1360px;
+  }
+  .ph1{
+    width:1360px ;
+  }
+  @media(max-width:1340px)
+  {   
+    .funiro-furniture{
+      width: 1280px;
+    }
+    .ph1{
+      width:1280px ;
+    }
+  }
+  }
+  @media(max-width:1340px)
+  {   
+    .funiro-furniture{
+      width: 1280px;
+    }
+    .ph1{
+      width:1280px ;
+    }
+}
+@media(max-width:1280px)
+{   
+  .funiro-furniture{
+    width: 1180px;
+  }
+  .ph1{
+    width:1180px ;
+  }
+}
+@media(max-width:1180px)
+{   
+  .funiro-furniture{
+    width: 980px;
+  }
+  .ph1{
+    width:980px ;
+  }
+}
+
+
+@media (max-width:1030px) {
+  .header-line{
+    width: auto;
+  }
   .logo-container {
+    
     cursor: pointer;
   }
+
+  .aboutus {
+    grid-template-columns: 50%;
+    gap: 20px;
+    margin: 20px;
+  }
+.controls{
+  top:65%;
+  left: 77%;
+}
 }
 
 .slider-img {
@@ -865,11 +929,17 @@ color:#9F9F9F;;
 }
 
 
- @media (max-width: 512px){
-  .otherimg{
-    display: none;
+ @media (max-width: 520px){
+
+  .beatiful-rooms-text1{
+    font-size: 25px;
   }
- }
+.beatiful-rooms-text{
+  margin: 0 auto;
+} 
+
+}
+
 
  @media (max-width: 450px){
 
@@ -882,9 +952,11 @@ color:#9F9F9F;;
   .broomscontainer {
   padding: 0px;
   gap: none; 
-  width: 450px;   
+  width: auto;   
   }
-  
+  .header{
+    width: auto;
+  }
   .header-line {
     flex-direction: column;
     gap: 10px;
@@ -897,6 +969,13 @@ color:#9F9F9F;;
     gap: 20px;
   
  }
+.beatiful-rooms{
+  margin: 0 auto;
+}
+.beatiful-rooms-text{
+  padding: 5px;
+}
+
 } 
 .text-list-menu{
 display: flex;
@@ -929,3 +1008,54 @@ align-items: center;
    }
 }
 
+@media (max-width:443px) {
+   .beatiful-rooms-text1
+   {
+    font-size:  20px;
+  }
+  .beatiful-rooms-text2{
+    font-size: 14px;
+  }
+.beatiful-rooms-text{
+  max-width: 320px;
+}
+  .otherimg{
+    width: 320px;
+
+  }
+.broomscontainer{
+  width: auto;
+}
+.slider-img.active{
+  width: 320px;
+}
+.slider-img{
+  width: 320px;
+}
+.slider{
+width: 330px;
+}
+.controls{
+  left: 70%;
+}
+.text-box{
+  left: 44%;
+  top: 43%;
+}
+  
+}
+
+@media (max-width:359px) {
+  .pend1{
+    font-size: 14px;
+  }
+  .imgdining{
+    width: 320px;
+  }
+  .imgliving{
+    width: 320px;
+  }
+  .imgbedroom{
+    width: 320px;
+  }
+}
